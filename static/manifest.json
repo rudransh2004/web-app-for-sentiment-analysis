@@ -1,0 +1,16 @@
+{
+    "name": "Rudransh Sentiment Analyzer",
+    "short_name": "Sentiment Analyzer",
+    "description": "use this app for any purpose like analyze sentiment of any text or your product review",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#000000",
+    "theme_color": "#0f4a73",
+    "icons": [{
+      "src": "icon.png",
+      "sizes": "196x196",
+      "type": "image/png"
+    }]
+  }
+  

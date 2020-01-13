@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">  
+    <meta name="theme-color" content="#0f4a73">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mystyle.css')}}">
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json')}}">
+    <link rel="icon" sizes="196x196" href="{{ url_for('static',filename='icon.png')}}">"
+    
+    <script>
+     var result = {{ result }}
+    </script>    
+ 
+</head>
+
+<body>
+<div class = "headings">
+<h1>SENTIMENT ANALYSIS</h1>
+</div>
+
+
+<div class = "line1">
+<p>This is an application that can analze your sentiments</p>
+<p>You cna also use this site to analyze you product reviews sentiments</p>
+</div>
+<div class = "text_box">
+    <form method = "Post">
+        <input name= "text">
+        <input type = "submit">
+         sentiment:{{result}}<br>
+    </form>
+</div>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+
+
+</body>
+</html>
